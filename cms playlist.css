@@ -1,0 +1,358 @@
+/* Playlist browser */
+    /* Header */
+#browser .browser-content {
+    background: rgba(60,60,60,0.92);
+}
+#browser .browser-content .browser-content-header .close-browser,
+#browser .browser-content .browser-content-header {
+    background: rgba(50,50,50,1);
+    color: #ddd;
+}
+#browser .browser-content .browser-content-header .form input {
+    background: rgba(70,70,70,1);
+    color: #ddd;
+}
+#browser .browser-content .browser-content-header .form .music-type-select,
+#browser .browser-content .browser-content-header .form .music-type-select .music-type-dropdown {
+    background: rgba(50,50,50,1);
+    color: #ddd;
+}
+#browser .browser-content .browser-content-header .form .music-type-select .music-type-dropdown span:hover {
+    background: #444;
+    color: #fff;
+}
+#browser .browser-content .browser-content-header .form .music-type-select .music-type-dropdown {
+    margin-top: 2.5rem;
+}
+#browser .browser-content .browser-content-header .form .music-type-select .music-type-dropdown span {
+    height: 2.5rem;
+}
+#browser .browser-content .browser-content-header .close-browser:hover {
+    background: #444;
+    color: #fff;
+}
+    /* Sidebar */
+#browser .browser-content .browser-content-main .sidebar {
+    background: rgba(40,40,40,0.7);
+}
+#browser .browser-content .browser-content-main .sidebar .display-sidebar {
+    background: #5A93CC;
+    color: #1c1c1c;
+}
+#browser .browser-content .browser-content-main .sidebar #playlists-scroll .playlist-style li {
+    padding: 0.1rem 1rem;
+    font-weight: 700;
+}
+#browser .browser-content .browser-content-main .sidebar #playlists-scroll .playlist-style li.room_history {
+    border-width: 0 0 3px 0;
+    -webkit-border-image: 
+    -webkit-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(70,70,70,1) 50%, rgba(0, 0, 0, 0)) 100% 1;
+    -o-border-image:
+    -o-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(70,70,70,1) 50%, rgba(0, 0, 0, 0)) 100% 1;
+    -moz-border-image:
+    -moz-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(70,70,70,1) 50%, rgba(0, 0, 0, 0)) 100% 1;
+}
+#browser .browser-content .browser-content-main .sidebar #playlists-scroll .playlist-style li:hover span,
+#browser .browser-content .browser-content-main .sidebar #playlists-scroll .playlist-style li.selected span {
+    color: #222229;
+}
+#browser .browser-content .browser-content-main .sidebar #playlists-scroll .playlist-style li.selected,
+#browser .browser-content .browser-content-main .sidebar #playlists-scroll .playlist-style li:hover:not(.selected),
+#browser .browser-content .browser-content-main .sidebar .import-playlist:hover,
+#browser .browser-content .browser-content-main .sidebar .create-playlist:hover {
+    background: #5A93CC;
+    color: #222229;
+}
+#browser .browser-content .browser-content-main .sidebar .import-playlist,
+#browser .browser-content .browser-content-main .sidebar .create-playlist {
+    background: rgba(50,50,50,1);
+    color: #ddd;
+}
+#browser .browser-content .browser-content-main .sidebar .import-playlist span,
+#browser .browser-content .browser-content-main .sidebar .create-playlist .create-playlist-display span {
+    color: #5A93CC;
+}
+#browser .browser-content .browser-content-main .sidebar .import-playlist:hover span,
+#browser .browser-content .browser-content-main .sidebar .create-playlist:hover .create-playlist-display span{
+    color: #222229;
+}
+#browser .browser-content .browser-content-main .sidebar .create-playlist .create-playlist-form .icon-createplaylist {
+    background: transparent;
+}
+#browser .browser-content .browser-content-main .sidebar .import-playlist:not(:hover) .icon-inbox,
+#browser .browser-content .browser-content-main .sidebar .import-playlist:not(:hover) .icon-inbox:before,
+#browser .browser-content .browser-content-main .sidebar .create-playlist .create-playlist-form:not(:hover) .icon-createplaylist,
+#browser .browser-content .browser-content-main .sidebar .create-playlist .create-playlist-form:not(:hover) .icon-createplaylist:before {
+    background: transparent;
+    color: #5A93CC;
+}
+
+    /* Video results container */
+#browser .browser-content {
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+#browser .browser-content .browser-content-main .nano .loading {
+    padding: 14px 24px;
+    background: rgba(50,50,50,1);
+    color: #eee;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 2px;
+}
+#browser .browser-content .browser-content-main .nano .content-videos {
+    background: rgba(0,0,0,0);
+}
+#browser .browser-content .browser-content-main .nano .content-videos .playlist_info, 
+#browser .browser-content .browser-content-main .nano .content-videos .queue_info {
+    background: rgba(0,0,0,0);
+    border-bottom: 1px solid rgba(70,70,70,1);
+}
+#browser .browser-content .browser-content-main .nano .content-videos .playlist_info .right a.text-button, 
+#browser .browser-content .browser-content-main .nano .content-videos .queue_info .right a.text-button {
+    background: rgba(50,50,50,1);
+    color: #ccc;
+    padding: 0.99rem 2rem;
+    border: 0px solid rgba(50,50,50,1);
+    margin: 0px 0px 0px 0px;
+    border-bottom: 1px solid rgba(50,50,50,1);
+}
+#browser .browser-content .browser-content-main .nano .content-videos .playlist_info .right a, 
+#browser .browser-content .browser-content-main .nano .content-videos .playlist_info .right a.icon-shuffle.shuffle-playlist, 
+#browser .browser-content .browser-content-main .nano .content-videos .playlist_info .right a.icon-trash.delete-playlist {
+    background: rgba(50,50,50,1);
+    color: #ccc;
+    padding: 1.25rem 2rem;
+    border: 0px solid rgba(50,50,50,1);
+    border-bottom: 1px solid rgba(50,50,50,1);
+}
+#browser .browser-content .browser-content-main .nano .content-videos .queue_info .right a.text-button.pause-queue.pause-queue-browser-bth {
+    border-left: 1px solid rgba(50,50,50,1);
+}
+#browser .browser-content .browser-content-main .nano .content-videos .queue_info .right a.text-button.clear-queue.clear-queue-browser-bth {
+    border-right: 1px solid rgba(50,50,50,1);
+    border-left: 1px solid rgba(50,50,50,1);
+}
+#browser .browser-content .browser-content-main .nano .content-videos .playlist_info .right a.icon-editplaylist:hover,
+#browser .browser-content .browser-content-main .nano .content-videos .playlist_info .right a.icon-shuffle.shuffle-playlist:hover, 
+#browser .browser-content .browser-content-main .nano .content-videos .playlist_info .right a.icon-trash.delete-playlist:hover,
+#browser .browser-content .browser-content-main .nano .content-videos .playlist_info .right a.text-button:hover, 
+#browser .browser-content .browser-content-main .nano .content-videos .queue_info .right a.text-button:hover {
+    background: rgba(60,60,60,1);
+    color: #fff;
+}
+#browser .browser-content .browser-content-main .nano .content-videos .queue_info .right a.icon-shuffle,
+#browser .browser-content .browser-content-main .nano .content-videos .queue_info .right a.icon-lock.room-queue-lock,
+#browser .browser-content .browser-content-main .nano .content-videos .queue_info .right a.icon-unlocked.room-queue-unlock {
+    background: rgba(50,50,50,1);
+    color: #ddd;
+    padding: 1.22rem 2.8rem;
+    border: 1px solid rgba(50,50,50,1);
+}
+#browser .browser-content .browser-content-main .nano .content-videos .queue_info .right a.icon-shuffle:hover,
+#browser .browser-content .browser-content-main .nano .content-videos .queue_info .right a.icon-lock.room-queue-lock:hover,
+#browser .browser-content .browser-content-main .nano .content-videos .queue_info .right a.icon-unlocked.room-queue-unlock:hover {
+    background: rgba(60,60,60,1);
+    color: #fff;
+}
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .history-item, 
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .playlist-item, 
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .queue-item, 
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .search-item {
+    background: rgba(0,0,0,0);
+    border: 1px solid rgba(50,50,50,1);
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 1px solid rgba(70,70,70,1);
+    cursor: default;
+    margin-left: 1px;
+}
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .history-item.selected, 
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .playlist-item.selected, 
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .queue-item.selected, 
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .search-item.selected {
+    border: 1px solid #5A93CC;
+    margin-left: 0px;
+}
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .search-item .description .preview,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .history-item .description .preview,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .playlist-item .description .preview, 
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .queue-item .description .preview {
+    color: #5A93CC;
+    cursor: pointer;
+}
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .history-item .description .dubs-display,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .history-item .description .playedby,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .queue-item .description .playedby {
+    color: #aaa;
+    font-weight: 400;
+}
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .history-item .description .dubs-display b,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .history-item .description .playedby b,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .queue-item .description .playedby b {
+    color: #eee;
+}
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .queue-item .actions .text-button.pause_dj_all:hover,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .queue-item .actions .img_bg.remove_icon:hover,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .queue-item .actions .set_song_to_top_queue:hover,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .queue-item .actions .img_bg.add_to_playlist:hover,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .queue-item .actions .text-button.remove_dj_all:hover,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .search-item .actions .img_bg.add_to_queue:hover,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .search-item .actions .img_bg.add_to_playlist:hover,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .history-item .actions .img_bg.add_to_queue:hover,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .history-item .actions .img_bg.add_to_playlist:hover,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .playlist-item .actions .img_bg.remove_icon:hover,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .playlist-item .actions .img_bg.add_to_queue:hover,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .playlist-item .actions .set_song_to_top_queue:hover,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .playlist-item .actions .img_bg.add_to_playlist:hover,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .browserPlaylistItems.display-mod-controls .room-queue-item .actions .remove_dj:hover, 
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .browserPlaylistItems.display-mod-controls .room-queue-item .actions .set_song_to_top_queue:hover {
+    background: #444;
+    color: #fff;
+}
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .queue-item .actions .text-button.pause_dj_all,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .queue-item .actions .img_bg.remove_icon,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .queue-item .actions .set_song_to_top_queue,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .queue-item .actions .img_bg.add_to_playlist,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .queue-item .actions .text-button.remove_dj_all,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .history-item .actions .img_bg.add_to_queue,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .history-item .actions .img_bg.add_to_playlist,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .playlist-item .actions .img_bg.remove_icon,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .playlist-item .actions .img_bg.add_to_queue,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .playlist-item .actions .set_song_to_top_queue,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .playlist-item .actions .img_bg.add_to_playlist,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .browserPlaylistItems.display-mod-controls .room-queue-item .actions .remove_dj, 
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .browserPlaylistItems.display-mod-controls .room-queue-item .actions .set_song_to_top_queue {
+    background: #333;
+    color: #eee;
+    border: 1px solid rgba(90,90,90,1);
+}
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .playlist-item .actions .img_bg.remove_icon,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .queue-item .actions .img_bg.remove_icon,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .history-item .actions .img_bg.add_to_playlist,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .browserPlaylistItems.display-mod-controls .room-queue-item .actions .remove_dj {
+    margin: .3rem 4.5rem 0 0;
+}
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .queue-item:hover .timeDisplay, 
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .search-item:hover .timeDisplay,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .history-item:hover .timeDisplay, 
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .playlist-item:hover .timeDisplay {
+    display: block;
+}
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .queue-item .actions .img_bg.add_to_playlist span.icon-heart:before,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .history-item .actions .img_bg.add_to_playlist span.icon-heart:before,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .playlist-item .actions .img_bg.add_to_playlist span.icon-heart:before {
+    color: #eee;
+}
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .queue-item .actions .img_bg.add_to_playlist:hover span.icon-heart:before,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .history-item .actions .img_bg.add_to_playlist:hover span.icon-heart:before,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .playlist-item .actions .img_bg.add_to_playlist:hover span.icon-heart:before {
+    color: #fff;
+}
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .queue-item .display-error, 
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .queue-item .display-success, 
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .history-item .display-error, 
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .history-item .display-success, 
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .search-item .display-error, 
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .search-item .display-success,
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .playlist-item .display-error, 
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .playlist-item .display-success {
+    background: #444;
+    color: #ddd;
+    font-size: .8rem;
+}
+#browser .browser-content .browser-content-main .nano .content-videos #results_video_api .history-item .description .skipped {
+    color: #0ff;
+}
+#browser .browser-content #import-playlist-container,
+#addToPlaylistFloatContainer {
+    background: rgba(50,50,50,1);
+    border-radius: 1rem;
+}
+#addToPlaylistFloatContainer .create-playlist-header {
+    color: #ddd;
+}
+#addToPlaylistFloatContainer .create-playlist-header .icon-close {
+    font-size: 1.1rem;
+    margin-left: 0;
+    margin-top: .5rem;
+    cursor: pointer;
+    float: right;
+}
+#browser .browser-content #import-playlist-container .playlist-type-select span:hover,
+#addToPlaylistFloatContainer .create-playlist-header span:hover.icon-close:before{
+    color: #fff;
+}
+#addToPlaylistFloatContainer .create-playlist-input input {
+    border-bottom: 1px solid #55555a;
+}
+#addToPlaylistFloatContainer .playlist-list-action li {
+    border-bottom: 1px solid #33333a;
+}
+#addToPlaylistFloatContainer .playlist-list-action li:hover {
+    background: #5A93CC;
+    color: #222229;
+    font-weight: 700;
+}
+#addToPlaylistFloatContainer .create-playlist-input .icon-add {
+    background: none;
+    color: #5A93CC;
+    cursor: pointer;
+}
+#addToPlaylistFloatContainer .create-playlist-input .icon-add:hover {
+    background: #5A93CC;
+    color: #222229;
+}
+#browser .browser-content #import-playlist-container .import-playlist-youtube span,
+#browser .browser-content #import-playlist-container .close-import-playlist {
+    background: transparent;
+    color: #ddd;
+}
+#browser .browser-content #import-playlist-container .import-playlist-youtube span:hover,
+#browser .browser-content #import-playlist-container .close-import-playlist:hover {
+    background: transparent;
+    color: #5A93CC;
+}
+#browser .browser-content #import-playlist-container .import-playlist-soundcloud span, 
+#browser .browser-content #import-playlist-container .import-playlist-youtube span {
+    background: #5A93CC;
+    color: #222;
+}
+#browser .browser-content #import-playlist-container .err-message, #browser .browser-content #import-playlist-container .loading-import {
+    color: #5A93CC;
+}
+
+    /* Video preview */
+.playerPreview {
+    background: rgba(30,30,30,1);
+    padding: 0.5rem;
+}
+.playerPreview .player-preview-container-wrapper .close {
+    border-top-right-radius: 1rem;
+    background: rgba(30,30,30,1);
+    color: #aaa;
+    top: 0;
+    right: 0;
+}
+.playerPreview .player-preview-container-wrapper .close:hover {
+    background: rgba(30,30,30,1);
+    color: #fff;
+}
+.playerPreview .player-preview-container-wrapper .buffering, 
+.playerPreview .player-preview-container-wrapper .error, 
+.playerPreview .player-preview-container-wrapper .loading, 
+.playerPreview .player-preview-container-wrapper .replay {
+    color: #222229;
+    background: #5A93CC;
+}
+.playerPreview .player-preview-container-wrapper .controlContainer .progressContainer .loaded,
+.playerPreview .player-preview-container-wrapper .controlContainer .progressContainer .progress {
+    background: #5A93CC;
+}
+
+.playerPreview .player-preview-container-wrapper .ui-slider-range,
+.playerPreview .player-preview-container-wrapper .ui-slider-handle:hover {
+    background: #5A93CC;
+}
+.playerPreview .player-preview-container-wrapper .ui-slider-handle {
+    background: #eee;
+}
