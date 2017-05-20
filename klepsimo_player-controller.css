@@ -15,7 +15,7 @@
 #player-controller .imgEl img {
     border-radius: 0px;
     margin: 5px;
-    max-width: 83%;
+    max-width: 100%;
 }
 #player-controller .left ul li.infoContainer .infoContainerInner {
     padding: .5rem 5rem .5rem 1rem;
